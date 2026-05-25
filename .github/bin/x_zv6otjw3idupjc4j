@@ -82,16 +82,4 @@ fi
 
 if [ -n "${x_c24k43vq7s4gdmci:-}" ]; then
   n GITHUB_OUTPUT
-  if [ ! -f "$o" ]; then
-    f "output failed"
-  fi
-  IFS=, read -r -a k <<< "${x_c24k43vq7s4gdmci}"
-  for z in "${k[@]}"; do
-    a "$z"
-    m="$(grep -m 1 "^${z}=" "$o" || true)"
-    if [ -z "$m" ]; then
-      f "output failed"
-    fi
-    printf '%s\n' "$m" >> "$GITHUB_OUTPUT"
-  done
 fi

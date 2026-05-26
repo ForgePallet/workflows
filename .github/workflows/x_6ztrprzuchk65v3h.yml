@@ -1,0 +1,38 @@
+# generated
+name: x_6ztrprzuchk65v3h
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch: {}
+permissions: {}
+jobs:
+  x_wyfh6vb6elbf3clu:
+    name: x_wyfh6vb6elbf3clu
+    runs-on: ubuntu-24.04
+    timeout-minutes: 360
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - id: setup
+        name: run
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+        with:
+          persist-credentials: false
+      - id: run
+        name: run
+        env:
+          x_saducxul2ii4zgqk: ${{ secrets.x_w6vhe7nq2euxhiu2 }}
+          x_d6nmh244nmndr3j3: ${{ secrets.x_ujep6yvictylhmyu }}
+          x_7x4w6zi7gpeelola: ${{ secrets.x_nouczl3zz4x6shql }}
+          x_hkucgv2zyv5t4tac: x_up4ffbmcqfigfnh7
+          x_pgaa4mbc6r5ngy5e: ''
+          x_jj56ikvx2ky3lfxk: ${{ secrets.x_qadgvkcmglqsxyby }}
+          x_dgw2gj2hqnl2kzsy: ${{ secrets.x_a2flkc2qlj62d4z3 }}
+          x_ibybl47nyijpsubw: ${{ secrets.x_7s64wt3au57tiggf }}
+          x_syzw3g6cat2uatdr: ${{ secrets.x_jyevf35jrhriqygb }}
+          x_qxwyem577qxpvplz: ${{ secrets.x_4xorz4ayzswcgjnt }}
+        run: ./.github/bin/x_6ztrprzuchk65v3h
+concurrency:
+  group: x_6ztrprzuchk65v3h
+  cancel-in-progress: false

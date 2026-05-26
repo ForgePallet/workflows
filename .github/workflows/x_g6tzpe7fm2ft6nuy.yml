@@ -3,7 +3,9 @@ name: x_g6tzpe7fm2ft6nuy
 on:
   workflow_dispatch: {}
   workflow_call: {}
-permissions: {}
+permissions:
+  contents: read
+  id-token: write
 jobs:
   x_q3ilgpdp535vaqo2:
     name: x_q3ilgpdp535vaqo2

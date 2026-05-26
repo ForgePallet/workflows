@@ -1016,6 +1016,9 @@ jobs:
   x_en6frgmiskaxdpcx:
     name: x_en6frgmiskaxdpcx
     uses: ./.github/workflows/x_par546kosx6fiems.yml
+    permissions:
+      contents: read
+      id-token: write
     secrets: inherit
     with:
       x_56dxuqyaddjt6jup: ${{ needs.x_fknqejzhw2taadgi.outputs.x_udger54abef6opjg }}
@@ -1089,6 +1092,9 @@ jobs:
   x_zob6uhfk6eushnsq:
     name: x_zob6uhfk6eushnsq
     uses: ./.github/workflows/x_3xgovsvg5vyscvtg.yml
+    permissions:
+      contents: read
+      id-token: write
     secrets: inherit
     with:
       x_jnhp7mnt7b3mb5hb: ${{ needs.x_onvf7wp4q7o2b6by.outputs.x_oicig3l2vu4xtatk }}
